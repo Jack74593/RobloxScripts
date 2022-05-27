@@ -1,7 +1,6 @@
---
+--GUI Made by Jack74593
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-
 local Window = Library.CreateLib("Doomspire BrickBattle GUI || Made by Jack74593", "Ocean")
 local Tab = Window:NewTab("Main")
 local Section2 = Tab:NewSection("Script's")
@@ -9,39 +8,30 @@ local SectionRed = Tab:NewSection("Red")
 local SectionBlue = Tab:NewSection("Blue")
 local SectionGreen = Tab:NewSection("Green")
 local SectionYellow = Tab:NewSection("Yellow")
-
 SectionRed:NewButton("Red (Top)", "Red (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92,131,-1.1)
 end)
-
 SectionRed:NewButton("Red (Down)", "Red (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-131,25,-1.5)
 end)
-
 SectionBlue:NewButton("Blue (Top)", "Blue (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2.3,131,91)
 end)
-
 SectionBlue:NewButton("Blue (Down)", "Blue (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.4,25,131)
 end)
-
 SectionGreen:NewButton("Green (Top)", "Green (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.4,131,-81)
 end)
-
 SectionGreen:NewButton("Green (Down)", "Green (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.4,25,-131)
 end)
-
 SectionYellow:NewButton("Yellow (Top)", "Yellow (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86,131,1)
 end)
-
 SectionYellow:NewButton("Yellow (Down)", "Yellow (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131,25,-1.5 )
 end)
-
 Section2:NewButton("Infinite Jump", "Spam your spacebar to jump very high!", function()
 
     game.StarterGui:SetCore("SendNotification", {
@@ -79,7 +69,6 @@ Section2:NewButton("Infinite Jump", "Spam your spacebar to jump very high!", fun
     end
     end)
 end)
-
 Section2:NewButton("Fly", "Fly like a plane to show your power! Toggle with E.", function()
     repeat wait() 
 	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
@@ -93,7 +82,6 @@ local ctrl = {f = 0, b = 0, l = 0, r = 0}
 local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
 local maxspeed = 50 
 local speed = 0 
- 
 function Fly() 
 local bg = Instance.new("BodyGyro", torso) 
 bg.P = 9e4 
@@ -162,7 +150,6 @@ end
 end)
 Fly()
 end)
-
 Section2:NewButton("Speed", "Run with the speed of 100 SPS!", function()
     _G.HackedWalkSpeed = 100
  
@@ -178,8 +165,6 @@ Hum.WalkSpeed = _G.HackedWalkSpeed
 end)
 Hum.WalkSpeed = _G.HackedWalkSpeed
 end
- 
- 
 MyPlr.CharacterAdded:connect(function(Char)
 MyChar = Char
 repeat wait() until Char:FindFirstChild("Humanoid")
@@ -191,7 +176,6 @@ Hum.WalkSpeed = _G.HackedWalkSpeed
 end)
  
 end)
-
 Section2:NewButton("UnSpeed", "Stop the Speed Walking", function()
     _G.HackedWalkSpeed = 20
  
