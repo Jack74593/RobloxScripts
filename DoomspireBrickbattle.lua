@@ -1,8 +1,8 @@
-
+--
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Doomspire BrickBattle GUI V1.0 | UI Lib By xHeptc", "Ocean")
+local Window = Library.CreateLib("Doomspire BrickBattle GUI || Made by Jack74593", "Ocean")
 local Tab = Window:NewTab("Main")
 local Section2 = Tab:NewSection("Script's")
 local SectionRed = Tab:NewSection("Red")
@@ -45,7 +45,7 @@ end)
 Section2:NewButton("Infinite Jump", "Spam your spacebar to jump very high!", function()
 
     game.StarterGui:SetCore("SendNotification", {
-        Title = "| Doomspire GUI 1.0";
+        Title = "Notification";
         Text = "- Infinite Jump Enabled!";
         Icon = "rbxassetid://4414605822";
         Duration = 5;
